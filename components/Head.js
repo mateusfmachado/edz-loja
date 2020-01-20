@@ -2,8 +2,6 @@ import React from 'react';
 import NextHead from 'next/head';
 import { string } from 'prop-types';
 
-import Style from './Style';
-
 const defaultDescricao = '';
 const defaultOGURL = '';
 const defaultOGImage = "/static/logo.png";
@@ -33,7 +31,6 @@ const Head = props => (
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
             crossOrigin="anonymous" />
-        <Style />
         <link rel="stylesheet" href="/static/style.css" />
         {
             props.pagSeguro ? (

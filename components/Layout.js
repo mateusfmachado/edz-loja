@@ -1,5 +1,7 @@
 import Head from './Head';
 
+import Style from './Style';
+
 const Layout = ({ children, title, description, url, image, pagSeguro }) => (
     <div>
         <Head
@@ -8,6 +10,7 @@ const Layout = ({ children, title, description, url, image, pagSeguro }) => (
             url={url}
             ogImage={image}
             pagSeguro={pagSeguro}></Head>
+        <Style />
         <div className="body">
             { children }
         </div>
